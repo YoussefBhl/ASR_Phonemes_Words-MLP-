@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactez-nous</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/js_code.js"></script>
+
+
+</head>
+<body>
+<div class="jumbotron">
+   <div class="container text-center fix" >
+    <img src="assets/img/home.png" id="image"  height=200 width="500 px">
+     <h1 id="bienV" style="font-size: 300%;">Reconnaissance automatique des phonèmes et mots: Langue Arabe</h1>
+    <h1 id="appName">Reconnaissance automatique des phonèmes et mots: Langue Arabe</h1>
+   </div>
+</div >
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Accueil</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="choix-utilisateur">Reconnaissance</a></li>
+        <li class="active"><a href="contact-us">Contactez-nous</a></li>
+        <li><a href="propos">À propos</a></li>
+        <li><a href="quitter">Quitter</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="container text-center fix">
+
+  </div>
+<br>
+<br><br>
+<div class="containe text-center">
+    <img src="assets/img/contact-us.png" width="120" height="80">
+    <h5>Une Question, une remarque ?</h5>
+    <h4>Contactez-nous !</h4>
+    <br>
+    <h4>CONTACT</h4>
+    <h4>Coordonnées</h4>
+    <br>
+    <h5>Adresse    : Campus Universitaire de la Manouba, 2010   Manouba, Tunisia</h5>
+    <h5>Tél.    :  ( +216 ) 71.600.444</h5>
+    <h5>Fax    :  ( +216 ) 71.600.449</h5>
+    <h5>E-mail    : asr@ensi-uma.tn</h5>
+    <br>
+    <h4>Formulaire</h4>
+    <br>
+    <form id="monform" method="post">
+      <div class="form-group">
+         <label >Nom & prénom *    :</label><br>
+         <input id="user" type="text" class="input-medium" name="nom" >
+          <p style="display: none;color: red" id="name_error">nom est vide</p>
+      </div>
+      <div class="form-group">
+        <label >E-mail *          :</label><br>
+        <input type="email" class="input-medium" id="email" name="mail">
+          <p style="display: none;color: red" id="email_error1">email est vide</p>
+          <p style="display: none;color: red" id="email_error2">email est invalide</p>
+      </div>
+      <div class=".form-control">
+        <label>Tél.                          :</label><br>
+         <input type="text" class="input-medium bfh-phone" data-country="TN" id="tel" name="tel">
+          <p style="display: none;color: red" id="tel_error">num Tél. est invalide</p>
+      </div>
+      <div class="form-group containe text-center">
+        <label >message *:</label><br>
+        <textarea rows="5" id="message" style="width:300px; align:center;" name="message" id="message"></textarea>
+          <p style="display: none;color: red" id="message_error">message est vide</p>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    <p style="display: none;color: darkolivegreen" id="succ">message envoyé avec succès. </p>
+    </form>
+
+
+</div>
+<br><br><br><br><br>
+<footer class="container-fluid text-center">
+    <h5>Réalisé par :</h5>
+    <h5>Haj Ltaief Youssef</h5>
+    <h5>Taallah Marwen</h5>
+    <h5></h5>
+    <h5>PCD 2016/2017</h5>
+
+</footer>
+<script src="assets\js\form.js"></script>
+</body>
+</html>

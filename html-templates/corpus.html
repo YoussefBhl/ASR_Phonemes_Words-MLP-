@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Corpus</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/js_code.js"></script>
+
+</head>
+<body>
+<div class="jumbotron" style="padding-bottom: 0px;">
+<div class="container text-center fix" >
+
+    <img src="assets/img/home.png" id="image"  height=200 width="500 px">
+     <h1 id="bienV" style="font-size: 300%;">Reconnaissance automatique des phonèmes et mots: Langue Arabe</h1>
+    <h1 id="appName">Reconnaissance automatique des phonèmes et mots: Langue Arabe</h1>
+   </div>
+</div >
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Accueil</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="choix-utilisateur">Reconnaissance</a></li>
+        <li><a href="contact-us">Contactez-nous</a></li>
+        <li><a href="propos">À propos</a></li>
+        <li><a href="quitter">Quitter</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container text-center fix" >
+<br>
+    <div id="out">
+        <h1 style="display: inline">Prononcez </h1> <h1 id="phon" style="display: inline"> 'أ' </h1>
+        <h1 style="display: inline">  pour la </h1> <h1 id="iem" style="display: inline"> 1</h1 >
+        <h1 style="display: inline">fois:</h1>
+    </div>
+    <button onclick="startRecording(this);">record</button>
+    <button onclick="stopRecording(this);" disabled>stop</button>
+    <br><br>
+<h1 style="display: none" id="msg">le traitement pourra prendre quelque minutes.veuillez patienter</h1>
+  <div class = "circle container text-center fix" id="count">
+
+<label id="minutes">00</label>:<label id="seconds">00</label>:<label id="milliseconds">00</label></div>
+    <br>
+    <button onclick="recognition(this);">submit</button>
+    <div class="container text-center fix" >
+    <a href="recognition">
+            <button type="button" class="text-center btn btn-primary btn-lg  button" id="start" style="display: none;">
+        <h3>Start</h3></button></a></div>
+    <br>
+
+</div>
+
+
+
+  <ul id="recordingslist"></ul>
+
+<script src="assets/js/micro_corpus.js"></script>
+
+  <script src="assets/js/recorder.js"></script>
+<footer class="container-fluid text-center">
+    <h5>Réalisé par :</h5>
+    <h5>Haj Ltaief Youssef</h5>
+    <h5>Taallah Marwen</h5>
+    <h5></h5>
+    <h5>PCD 2016/2017</h5>
+
+</footer>
+</body>
+</html>
